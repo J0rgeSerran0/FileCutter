@@ -7,7 +7,7 @@ namespace FileCutter
 {
     public class Process
     {
-        private const string CUTTER_EXTENSION = ".cup";
+        private const string CUTTER_EXTENSION = ".cut";
         private const string SEACH_PATTERN = "*" + CUTTER_EXTENSION;
         private const string SEPARATOR = ".";
 
