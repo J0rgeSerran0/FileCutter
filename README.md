@@ -14,6 +14,9 @@ The motivation to do this, is to resolve an issue found in the original code and
 > **Note:** *The original files in the split or join actions, are deleted by default. If you don't want to delete the original files, you should indicate this in the parameters of the *Splitter* and *Joiner* methods.*
 
 ### **Split Files**
+
+> Using the **Splitter** method
+
 * This code show you how to split a large file into files of 4 Megabytes:
 ```csharp
 var fileCutterProcess = new FileCutter.Process();
@@ -28,6 +31,8 @@ fileCutterProcess.Splitter(@"C:\Temp\BigFile.txt", 5);
 
 ### **Join Files**
 
+> Using the **Joiner** method
+> 
 * This code show you how to join the splitted files, to the original file:
 ```csharp
 var fileCutterProcess = new FileCutter.Process();
