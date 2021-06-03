@@ -11,7 +11,7 @@ Library to split a large file into small ones, and join them again to the origin
 
 ## How to
 
-> **Note:** *The original files in the split or join actions, are deleted by default. If you don't want to delete the original files, you should indicate this in the parameters of the *Splitter* and *Joiner* methods.*
+> **Note:** *The original files in the split or join actions, are deleted by default. If you don't want to delete the original file or the cutter files, you should indicate this in the parameters of the *Splitter* and *Joiner* methods.*
 
 ### **Split Files**
 
