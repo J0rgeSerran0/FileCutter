@@ -111,7 +111,7 @@ namespace FileCutter
             }
         }
 
-        public void Joiner(string outputPath, bool deleteOriginFile = true)
+        public void Joiner(string outputPath, bool deleteCutterFiles = true)
         {
             string[] files = GetFilesToMerge(outputPath);
 
@@ -130,7 +130,7 @@ namespace FileCutter
                             while ((bytesRead = inputTempFile.Read(buffer, 0, 1024)) > 0)
                                 outputFile.Write(buffer, 0, bytesRead);
 
-                        if (deleteOriginFile)
+                        if (deleteCutterFiles)
                             File.Delete(file);
                     }
                 }
