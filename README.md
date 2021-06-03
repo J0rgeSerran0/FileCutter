@@ -38,7 +38,7 @@ fileCutterProcess.Splitter(@"C:\Temp\BigFile.txt", 5);
 > Using the **Joiner** method
 
 ```csharp
-Joiner(string outputPath, bool deleteOriginFile = true)
+Joiner(string outputPath, bool deleteCutterFiles = true)
 ```
  
 * This code show you how to join the splitted files, to the original file:
