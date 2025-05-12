@@ -74,8 +74,9 @@ namespace FileCutter
                             flag = true;
                             outputFile.Write(buffer, 0, bytesRead);
                         }
+                        outputFile.Close();
                     }
-
+                    
                     if (!flag)
                         File.Delete(pathFileName);
                 }
@@ -104,7 +105,7 @@ namespace FileCutter
                             outputFile.Write(buffer, 0, bytesRead);
                             remaining -= bytesRead;
                         }
-
+                        outputFile.Close();
                         position++;
                     }
                 }
